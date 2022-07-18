@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Estilos/Estilos2.css">
+	<title>Contact Us</title>
+	<script src="Slider.js"></script>
+</head>
+<body background="Media/Help Background.jpg" style="background-size: 1366px 700px; background-repeat: no-repeat; background-attachment:fixed;">
+
+<div id="menuPrincipal" style="position: fixed; top: 0px; left: 0px; z-index: 0; width: 100%; box-shadow: 1px 1px 10px black; transition: 0.5s;">
+	<ul> <!--Lista de los menus-->
+	<li><a href="Principal.html">Home</a></li>
+	<li><a href="Guardian.html">Guardian</a></li>
+	<li><a href="Inventory.html">Inventory</a> </li>
+	<li><a href="Allies.html">Allies</a> </li>
+	<li><a href="Enemies.html">Enemies</a> </li>
+	<li><a href="Places.html">Places</a> </li>
+</ul>
+</div>
+<img src="Media/Sweeper Bot.jpg" alt="Sweeper Bot.jpg" style="width: 100%; height: 100%;">
+<div style="position: fixed; top: 0px; left: 750px; z-index: 0; width: 648px; transition: 0.5s;">
+	<ul> <!--Lista de los menus-->
+	<li><a href="Contact Us.html">Contact us</a></li>
+	<li><a style="height: 23px; width: 50px;" onclick="return salirPagina()" href="https://facebook.com" onclick="return salirPagina()"><img src="Media/Facebook logo.png"></a></li>
+	<li><a style="height: 23px; width: 50px;" onclick="return salirPagina()" href="https://twitter.com"><img src="Media/Twitter logo.png"></a></li>
+	<li><a style="height: 23px; width: 50px;" onclick="return salirPagina()" href="https://youtube.com"><img src="Media/Youtube logo.png"></a></li>
+</ul>
+<!-- Fin de Lista de los Menus-->	
+</div>
+<!--DIV de header-->
+<div style=" margin: 80px; margin-top: 50px; background-color: #245E6B; padding: 10px; background: rgba(0, 0, 0, 0.6); box-shadow: 0 1px 2px;">
+	<h1 style="color: white; font-size: 20px;">Do you wanna tell us something?</h1>
+</div>
+<!--Fin del DIV de header-->
+<!--DIV de Cotenido-->
+<div style=" margin: 80px; margin-top: -80px; background: rgba(0, 0, 0, 0.4); padding: 20px;">
+	<!-- Párrafo de contenido-->
+	<p class="textoContenido">Complete the following form to stay with contact with us, try to tell us something to improve or tell us what questions you may have!</p>
+	<hr>
+	<!--Formulario-->
+	<form name="Contact Us" action="mailto:starcheeser@gmail.com?cc=starcheeser@gmail.com&subject=Envío de formulario" method="post" enctype="text/plain">
+		<p id="formulario">Name:</p>
+		<input type="text" placeholder="Write your Name" name="Name" size="20" maxlength="15" onclick="validaEnvia()"></input>
+		<br>
+		<p id="formulario">Last Name:</p>
+		<input type="text" name="Last Name" placeholder="Write your Last Name" size="20" maxlength="15"></ins>
+		<br>
+		<p id="formulario">ID:</p>
+		<input type="text" name="Identification Number" placeholder="Write your ID" size="20" maxlength="15"></ins>
+		<p id="formulario">E-mail:</p>
+		<input type="text" name="E-mail" placeholder="Write your E-Mail" size="20" maxlength="15"></ins>
+		<p id="formulario">Phone Number</p>
+		<input type="text" name="Phone Number" placeholder="Write your Phone Number" size="20" maxlength="15"></ins>
+		<p id="formulario">Province:</p>
+		<input type="text" name="Province" placeholder="Write your Province" size="20" maxlength="15"></ins>
+		<p id="formulario">Last Name:</p>
+		<input type="text" name="Last Name" placeholder="Write your Last Name" size="20" maxlength="15"></ins>
+		<!-- CAJAS DE ELECCION -->
+		<p id="formulario">Marital Status:</p>
+		<p id="formulario"><input type="CHECKBOX" name="Marital Status" value="Single">Single</input></p>
+		<p id="formulario"><input type="CHECKBOX" name="Marital Status" value="Divorced">Divorced</input></p>
+		<p id="formulario"><input type="CHECKBOX" name="Marital Status" value="Free Union">Free Union</input></p>
+		<p id="formulario"><input type="CHECKBOX" name="Marital Status" value="Marries">Married</input></p>
+		<!-- AGRUPACIÓN SELECCIÓN MÚLTIPLE-->
+		<p id="formulario">Choose your age</p>
+		<select name="Comidas" size="5" multiple="">
+		<option selected>Choose your age range</option>
+		<option>10-20</option>
+		<option>20-30</option>
+		<option>30-40</option>
+		<option>+40</option>
+		</select>
+		<br><br>
+		<p id="formulario">Write us what you want!</p>
+		<textarea></textarea>
+		<br><br>
+		<!-- Restablece todo el formulario -->
+		<input type="reset" name="Reset">
+		<!-- Envía todo el formulario -->
+		<input type="submit" name="Send">
+	</form>
+	<!--Fin del Formulario-->
+</div>
+<!--Fin del DIV de Cotenido-->
+<!--Ancla para volver a Arriba-->
+<div id="volverArriba"><a href="#AnclaTop"><img src="Media/Volver a Arriba.png"></a></div>
+<!--Fin del Ancla para volver a Arriba-->
+<!--Footer-->
+<div style="background-color: #333; padding: 20px; margin-left: 0;">
+	<p style="font-size: 22px; font-family: arial; color: white; margin-left: 60px;">GET IN TOUCH</p>
+	<p style="font-size: 16px; font-family: arial; color: white; margin-left: 60px;">Universidad Fidélitas</p>
+	<p style="font-size: 16px; font-family: arial; color: white; margin-left: 60px;">Calle Siles, 203, San José, San Pedro</p>
+	<p style="font-size: 16px; font-family: arial; color: white; margin-left: 60px;">©2017 Universidad Fidélitas</p>
+</div>
+<!--Final del Footer-->
+</body>
+</html>
